@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Keyword Counter",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "/QKC_images/QKC_16.png",
+        "48": "/QKC_images/QKC_48.png",
+        "128": "/QKC_images/QKC_128.png"
+      }
+    },
+    "permissions": ["declarativeContent", "tabs"],
+    "host_permissions": ["http://localhost/"],
+    "icons": {
+        "16": "/QKC_images/QKC_16.png",
+        "48": "/QKC_images/QKC_48.png",
+        "128": "/QKC_images/QKC_128.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+}
